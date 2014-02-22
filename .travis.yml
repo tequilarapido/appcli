@@ -6,21 +6,24 @@ php:
   - 5.5
   - hhvm
 
-branches:
-  only:
-    - master
-
-env:
-  - LAUNCHER=CONSOLE
-  - LAUNCHER=PHAR
+#branches:
+#  only:
+#    - master
 
 before_script:
+  # Mailcacher server
+  - gem install mailcatcher
+  - mailcatcher
+
+  # Database
+  - cp "$TRAVIS_BUILD_DIR/.env.example" "$TRAVIS_BUILD_DIR/.env"
+  - echo "USE mysql;\nUPDATE user SET password=PASSWORD('root') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
+  - mysql -e 'DROP DATABASE IF EXISTS `wp_v381`; CREATE DATABASE `wp_v381` /*!40100 CHARACTER SET utf8 COLLATE 'utf8_general_ci' */;'
+
+  # Dependencies
   - composer self-update && composer --version
   - composer install --prefer-source --no-interaction --dev
   - wget http://codeception.com/codecept.phar
-  - echo "USE mysql;\nUPDATE user SET password=PASSWORD('root') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
-  - mysql -e 'DROP DATABASE IF EXISTS `wp_v381`; CREATE DATABASE `wp_v381` /*!40100 CHARACTER SET utf8 COLLATE 'utf8_general_ci' */;'
-  - chmod +x "$TRAVIS_BUILD_DIR/dist/downloads/appcli.phar"
 
 script:
   - php codecept.phar run functional --steps
