@@ -1,0 +1,26 @@
+# Codeception Test Suite Configuration
+
+# suite for functional (integration) tests.
+# emulate web requests and make application process them.
+# (tip: better to use with frameworks).
+
+# RUN `build` COMMAND AFTER ADDING/REMOVING MODULES.
+
+class_name: TestGuy
+modules:
+    enabled: [Filesystem, TestHelper, Cli, Db]
+    config:
+          Db:
+             dsn: 'mysql:host=127.0.0.1;dbname=wp_v381'
+             user: 'root'
+             password: 'root'
+             dump: 'tests/_data/databases/wp_v381.sql'
+             populate: true
+             cleanup: true
+
+env:
+    developement: []
+          # Change nothing
+
+    phar: []
+          # Change nothing

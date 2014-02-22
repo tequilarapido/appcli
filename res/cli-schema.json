@@ -1,0 +1,182 @@
+{
+    "description": "WP-CLI configuration file schema.",
+    "type": "object",
+    "additionalProperties": false,
+
+    "properties": {
+
+        "project": {
+            "description": "The name of the project, that wp-cli will be run against.",
+            "type": "string",
+            "required": true
+        },
+
+        "database": {
+            "description": "Database connection informations",
+            "type": "object",
+            "additionalProperties": false,
+            "required": true,
+            "properties": {
+                "host": {
+                    "type": "string",
+                    "required": true
+                },
+                "database": {
+                    "type": "string",
+                    "required": true
+                },
+                "username": {
+                    "type": "string",
+                    "required": true
+                },
+                "password": {
+                    "type": "string",
+                    "required": true
+                },
+                "prefix": {
+                    "type": "string",
+                    "required": true
+                }
+            }
+        },
+
+        "notify": {
+            "description": "Informations needed to send notifications",
+            "type": "object",
+            "additionalProperties": false,
+            "required": false,
+            "properties": {
+                "from": {
+                    "type": "string",
+                    "required": true
+                },
+                "to": {
+                    "type": "array",
+                    "required": true,
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "config": {
+                    "type": "object",
+                    "required": "false",
+                    "properties": {
+                        "transport": {
+                            "type": "string",
+                            "required": false
+                        },
+                        "parameters": {
+                            "type": "object",
+                            "required": false
+                        }
+                    }
+                }
+            }
+        },
+
+
+        "replace": {
+            "description": "Information needed to perform db:replace operation",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+
+                "replacements": {
+                    "description": "Array of replacement couples (from and to)",
+                    "type": "array",
+                    "required": true,
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "from": {
+                                "type": "string",
+                                "required": true
+                            },
+                            "to": {
+                                "type": "string",
+                                "required": true
+                            }
+                        }
+                    }
+                },
+
+                "excludeTables": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+
+                "notify": {
+                    "type": "boolean",
+                    "required": false
+                }
+            }
+        },
+
+
+        "cleanup": {
+            "description": "Information needed to perform cleanup operations",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "truncate": {
+                    "description": "Tables to truncate.",
+                    "type": "object",
+                    "properties": {
+                        "simple": {
+                            "type": "array",
+                            "required": false
+                        },
+                        "multi": {
+                            "type": "array",
+                            "required": false
+                        }
+                    }
+                },
+
+                "delete": {
+                    "description": "Delete operation.",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "table": {
+                                "type": "string",
+                                "required": true
+                            },
+                            "multi": {
+                                "type": "boolean",
+                                "required": true
+                            },
+                            "conditions": {
+                                "description": "Delete condition (equivalent to SQL where statement ).",
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "field": {
+                                            "type": "string",
+                                            "required": true
+                                        },
+                                        "operator": {
+                                            "type": "string",
+                                            "required": true
+                                        },
+                                        "value": {
+                                            "type": "string",
+                                            "required": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

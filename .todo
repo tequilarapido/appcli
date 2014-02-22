@@ -1,0 +1,5 @@
+- db:replace  ->
+ - Add email notifications, maybe using Laravel or symfony events.
+    - https://github.com/namshi/notificator
+
+- generate:config

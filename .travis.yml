@@ -1,0 +1,32 @@
+language: php
+
+php:
+  - 5.3
+  - 5.4
+  - 5.5
+  - hhvm
+
+branches:
+  only:
+    - master
+
+env:
+  - LAUNCHER=CONSOLE
+  - LAUNCHER=PHAR
+
+before_script:
+  - composer self-update && composer --version
+  - composer install --prefer-source --no-interaction --dev
+  - wget http://codeception.com/codecept.phar
+  - echo "USE mysql;\nUPDATE user SET password=PASSWORD('root') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
+  - mysql -e 'DROP DATABASE IF EXISTS `wp_v381`; CREATE DATABASE `wp_v381` /*!40100 CHARACTER SET utf8 COLLATE 'utf8_general_ci' */;'
+  - chmod +x "$TRAVIS_BUILD_DIR/dist/downloads/appcli.phar"
+
+script:
+  - php codecept.phar run functional --steps
+
+matrix:
+  allow_failures:
+    - php: 5.6
+    - php: hhvm
+  fast_finish: true

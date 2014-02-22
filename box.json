@@ -1,0 +1,31 @@
+{
+    "chmod": "0755",
+    "directories": [
+        "res",
+        "src"
+    ],
+    "files": [
+        "console.php",
+        "LICENCE",
+        "src/vendor/herrera-io/phar-update/res/schema.json"
+    ],
+    "finder": [
+        {
+            "name": "*.php",
+            "exclude": [
+                "phpunit",
+                "phpunit-test-case",
+                "Tester",
+                "Tests",
+                "tests",
+                "yaml"
+            ],
+            "in": "src/vendor"
+        }
+    ],
+    "git-commit": "git-commit",
+    "git-version": "git-version",
+    "main": "bin/appcli",
+    "output": "dist/downloads/appcli.phar",
+    "stub": true
+}

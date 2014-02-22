@@ -1,0 +1,46 @@
+{
+    "project": "Wordpress 3.8.1",
+
+    "database": {
+        "host": "127.0.0.1",
+        "database": "wp_v381",
+        "username": "root",
+        "password": "root",
+        "prefix": "wp_"
+    },
+
+    "cleanup": {
+
+        "delete": [
+            {
+                "table": "posts",
+                "multi": true,
+                "conditions": [
+                    {
+                        "field": "post_type",
+                        "operator": "!=",
+                        "value": "unkown_type"
+                    },
+                    {
+                        "field": "post_date",
+                        "operator": "<",
+                        "value": "2025"
+                    }
+                ]
+            },
+            {
+                "table": "wp_comments",
+                "multi": false,
+                "conditions": [
+                    {
+                        "field": "comment_date",
+                        "operator": "<",
+                        "value": "2025"
+                    }
+                ]
+            }
+        ]
+
+    }
+
+}
