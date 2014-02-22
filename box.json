@@ -18,6 +18,7 @@
                 "Tester",
                 "Tests",
                 "tests",
+                "tests-suite",
                 "yaml"
             ],
             "in": "src/vendor"
