@@ -10,6 +10,11 @@ php:
 #  only:
 #    - master
 
+
+env:
+  - LAUNCHER=CONSOLE
+  - LAUNCHER=PHAR
+
 before_script:
   # Mailcacher server
   - gem install mailcatcher
