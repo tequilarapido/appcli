@@ -1,0 +1,25 @@
+{
+    "project": "Wordpress 3.8.1",
+
+    "database": {
+        "host": "127.0.0.1",
+        "database": "wp_v381",
+        "username": "root",
+        "password": "root",
+        "prefix": "wp_"
+    },
+
+    "cleanup": {
+        "truncate": {
+            "simple": [
+                "wp_comments",
+                "wp_posts"
+            ],
+            "multi": [
+                "comments",
+                "posts"
+            ]
+        }
+    }
+
+}

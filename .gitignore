@@ -1,0 +1,16 @@
+# IDE
+.idea
+
+# Codeception : wget http://codeception.com/codecept.phar
+codecept.phar
+
+# Composer
+src/vendor
+composer.lock
+
+# Environement
+.env
+
+# Application generated files
+.maintenance
+

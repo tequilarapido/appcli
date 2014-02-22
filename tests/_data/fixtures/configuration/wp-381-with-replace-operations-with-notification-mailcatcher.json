@@ -1,0 +1,37 @@
+{
+    "project": "Wordpress 3.8.1",
+
+    "database": {
+        "host": "127.0.0.1",
+        "database": "wp_v381",
+        "username": "root",
+        "password": "root",
+        "prefix": "wp_"
+    },
+
+    "notify": {
+        "from": "notify@appcli-example.com",
+        "to": [
+            "nbourguig@gmail.com"
+        ],
+        "transport": {
+            "type": "smtp",
+            "parameters": {
+                "host": "127.0.0.1",
+                "port": 1025
+            }
+        }
+    },
+
+    "replace": {
+        "replacements": [
+            {
+                "from": "wordpress-381.dev",
+                "to": "www.wordpress-381.com"
+            }
+        ],
+        "notify": true,
+        "excludeTables": [
+        ]
+    }
+}

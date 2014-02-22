@@ -1,0 +1,37 @@
+{
+    "name": "tequilarapido/cli",
+    "description": "Common cli taslks on webapps (wordpress, ...)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nassif Bourguig",
+            "email": "nbourguig@tequilarapido.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "1.0.6",
+        "symfony/console": "2.3.0",
+        "symfony/event-dispatcher": "2.3.0",
+        "symfony/process": "2.3.0",
+        "symfony/filesystem": "2.3.0",
+        "illuminate/database": "4.0.5",
+        "dandoescode/datum": "1.0.0",
+        "herrera-io/json": "~1.0",
+        "hazbo/json-formatter": "dev-master",
+        "swiftmailer/swiftmailer": "5.0.3",
+        "tequilarapido/php-serialized": "1.0.2",
+        "kherge/amend": "3.0.3"
+    },
+    "require-dev": {
+        "guzzle/guzzle": "v3.8.1"
+    },
+    "config": {
+        "vendor-dir": "src/vendor"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Tequilarapido\\": "src/Tequilarapido/"
+        }
+    }
+}
