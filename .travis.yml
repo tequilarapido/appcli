@@ -30,7 +30,7 @@ before_script:
   - wget http://codeception.com/codecept.phar
 
 script:
-  - php codecept.phar run functional --steps
+  - php codecept.phar run functional --steps --debug
 
 matrix:
   allow_failures:
