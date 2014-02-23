@@ -59,7 +59,7 @@ abstract class AbstractCommand extends Command
         $self = $this;
 
         try {
-            $this->getApplication()->getDispatcher()->addListener(ConsoleEvents::TERMINATE, function (ConsoleTerminateEvent $event) use ($self) {
+            $this->getApplication()->getDispatcher()->addListener(ConsoleEvents::TERMINATE, function () use ($self) {
                 $dt = Datum::createFromTimestamp($self->getStartTime());
                 $elapsed = time() - $self->getStartTime();
 
