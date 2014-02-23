@@ -4,10 +4,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Tequilarapido\Cli\Commands\Base\AbstractDatabaseCommand;
 use Tequilarapido\Database\Column;
-use Tequilarapido\Database\Database;
-use Tequilarapido\Database\Table;
 use Tequilarapido\Helpers\ShellHelper;
-use Tequilarapido\Helpers\StringHelper;
 use Tequilarapido\PHPSerialized\SearchReplace;
 
 class DatabaseReplace extends AbstractDatabaseCommand

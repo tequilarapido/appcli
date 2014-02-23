@@ -3,7 +3,6 @@
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Tequilarapido\Cli\Commands\Base\AbstractDatabaseCommand;
-use Tequilarapido\Cli\Commands\Base\DatabaseCommand;
 use Tequilarapido\Database\Database;
 use Tequilarapido\Database\Table;
 
