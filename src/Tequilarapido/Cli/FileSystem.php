@@ -18,12 +18,6 @@ class FileSystem
             throw new \LogicException("Directory not found (Given:" . $dir . ").");
         }
 
-        // Check if it's writable
-        echo "\n writable ? $directory\n";
-        if ($checkWritable && !is_writable($directory)) {
-            //throw new \LogicException("Sorry but [$directory] is not writable!");
-        }
-
         return $directory;
     }
 
