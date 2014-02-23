@@ -7,8 +7,7 @@ $version_file = dirname(__DIR__) . '/dist/version';
 $manifest_file = dirname(__DIR__) . '/dist/manifest.json';
 if (!is_file($manifest_file))
 {
-    echo "Manifest file not found!" . PHP_EOL;
-    exit;
+    throw new \LogicException("Manifest file not found!");
 }
 
 // Get version data froms args
