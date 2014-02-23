@@ -83,7 +83,6 @@ abstract class AbstractConfigurableCommand extends AbstractCommand
         // Check if it's writable
         if (!is_writable($fullpath)) {
             throw new \LogicException("Sorry but [$fullpath] is not writable!");
-            return false;
         }
 
         return false;
