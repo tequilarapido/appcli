@@ -25,6 +25,9 @@ class TestHelper extends \Codeception\Module
 
         // Clean message before each test
         $this->cleanMessages();
+
+        // Witch launcher ?
+        $this->debug('Running with LANCHER=' . $this->getLauncher());
     }
 
     /*
