@@ -821,6 +821,44 @@ class TestGuy extends \Codeception\AbstractGuy
      * Documentation taken from corresponding module.
      * ----------------------------------------------
      *
+     *
+     * @see Codeception\Module\TestHelper::runUsingPhar()
+     * @return \Codeception\Maybe
+     */
+    public function runUsingPhar($command) {
+        $this->scenario->addStep(new \Codeception\Step\Action('runUsingPhar', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
+     *
+     * @see Codeception\Module\TestHelper::runUsingConsole()
+     * @return \Codeception\Maybe
+     */
+    public function runUsingConsole($command) {
+        $this->scenario->addStep(new \Codeception\Step\Action('runUsingConsole', func_get_args()));
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * This method is generated.
+     * Documentation taken from corresponding module.
+     * ----------------------------------------------
+     *
      * Executes a shell command
      *
      * @param $command

@@ -6,8 +6,11 @@ use Guzzle\Http\Client;
 class TestHelper extends \Codeception\Module
 {
 
+    const LAUNCHER_CONSOLE = 'CONSOLE';
+    const LAUNCHER_PHAR = 'PHAR';
+
     static $consoleCommand = 'php console.php';
-    static $execuatbleCommand = 'php dist/downloads/appcli.phar';
+    static $pharCommand = 'php dist/downloads/appcli.phar';
 
     /**
      * @var Client
@@ -15,7 +18,7 @@ class TestHelper extends \Codeception\Module
     private $mailcatcher;
     private $mail;
 
-    public function _before(\Codeception\TestCase $test)
+    public function _before()
     {
         // Create mailcatcher client
         $this->mailcatcher = new Client('http://127.0.0.1:1080');
@@ -117,19 +120,23 @@ class TestHelper extends \Codeception\Module
     |
     */
 
-
-    protected function getCompleteCommand($command)
-    {
-        return $this->getLauncher() . ' ' . $command;
-    }
-
     protected function getLauncher()
     {
-        if (getenv('LAUNCHER') == 'PHAR') {
-            return static::$execuatbleCommand;
+        if (getenv('LAUNCHER') == static::LAUNCHER_PHAR) {
+            return static::LAUNCHER_PHAR;
         }
 
-        return static::$consoleCommand;
+        return static::LAUNCHER_CONSOLE;
+    }
+
+    protected function getPharCommand($command)
+    {
+        return static::$pharCommand . ' ' . $command;
+    }
+
+    protected function getConsoleCommand($command)
+    {
+        return static::$consoleCommand . ' ' . $command;
     }
 
     /**
@@ -139,8 +146,26 @@ class TestHelper extends \Codeception\Module
      */
     public function run($command)
     {
-        $command = $this->getCompleteCommand($command);
+        if ($this->getLauncher() === static::LAUNCHER_PHAR) {
+            $this->runUsingPhar($command);
+        } else {
+            $this->runUsingConsole($command);
+        }
+    }
+
+    public function runUsingPhar($command)
+    {
+        $command = $this->getPharCommand($command);
         $cli = $this->getModule('Cli');
         $cli->runShellCommand($command);
     }
+
+    public function runUsingConsole($command)
+    {
+        echo 'runUsingConsole';
+        $command = $this->getConsoleCommand($command);
+        $cli = $this->getModule('Cli');
+        $cli->runShellCommand($command);
+    }
+
 }
