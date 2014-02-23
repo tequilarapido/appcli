@@ -54,6 +54,16 @@ class Database
         return Capsule::connection()->statement($query, $bindings);
     }
 
+    public static function enableQueryLog()
+    {
+        Capsule::connection()->enableQueryLog();
+    }
+
+    public static function getLastQuery()
+    {
+        $queries = Capsule::connection()->getQueryLog();
+        return end($queries);
+    }
 
     public static function connection()
     {
@@ -69,5 +79,6 @@ class Database
     {
         return Capsule::table($table);
     }
+
 
 }

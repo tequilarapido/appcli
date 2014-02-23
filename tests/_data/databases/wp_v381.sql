@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Serveur: localhost
--- Généré le : Mer 19 Février 2014 à 08:58
+-- Généré le : Dim 23 Février 2014 à 16:08
 -- Version du serveur: 5.5.9
--- Version de PHP: 5.2.17
+-- Version de PHP: 5.4.13
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
@@ -306,7 +306,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (98, 'sidebars_widgets', 'a:5:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}s:13:"array_version";i:3;}', 'yes'),
 (99, 'A_TEST_PHP_OBJECT', 'O:8:"stdClass":2:{s:4:"type";s:17:"This is an object";s:3:"url";s:41:"http://wordpress-381.dev/uri/to/resource/";}', 'yes'),
 (100, 'A_TEST_PHP_ARRAY', 'a:2:{s:4:"type";s:16:"This is an array";s:3:"url";s:41:"http://wordpress-381.dev/uri/to/resource/";}', 'yes'),
-(101, 'A_TEST_JSON_OBJECT', '{"type":"This is an object","url":"http:\\/\\/wordpress-381.dev\\/uri\\/to\\/resource\\/"}', 'yes'),
+(101, 'A_TEST_JSON_OBJECT', '{"type":"This is an object","url":"http://wordpress-381.dev/uri/to/resource/"}', 'yes'),
 (103, 'cron', 'a:3:{i:1392796665;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1392839880;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}s:7:"version";i:2;}', 'yes'),
 (104, 'category_children', 'a:0:{}', 'yes'),
 (105, '_transient_is_multi_author', '0', 'yes'),

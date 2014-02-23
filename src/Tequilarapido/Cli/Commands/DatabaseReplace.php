@@ -117,17 +117,22 @@ class DatabaseReplace extends AbstractDatabaseCommand
                         continue;
                     }
 
-                    $s_edited_data = StringHelper::sanitizeSerialized($edited_data);
-                    $s_found_data = StringHelper::sanitizeSerialized($found_data);
-
                     // Update entry / value
-                    $update_query = 'UPDATE ' . $tableName . ' SET ' . $field_name . '="' . $s_edited_data . '" WHERE ';
-                    $update_query .= isset($id)
-                        ? $tableInfos['pk'] . '="' . $id . '";'
-                        : $field_name . '="' . $s_found_data . '";';
-                    $this->db->update($update_query);
-                    $db_queries[] = $update_query;
-                    
+                    if (isset($id)) {
+                        $this->db
+                            ->table($tableName)
+                            ->where($tableInfos['pk'], '=', $id)
+                            ->update(array($field_name => $edited_data));
+
+                    } else {
+                        $this->db
+                            ->table($tableName)
+                            ->where($field_name, '=', $found_data)
+                            ->update(array($field_name => $edited_data));
+                    }
+
+                    $db_queries[] = $this->db->getLastQuery();
+
                     // display progress
                     ShellHelper::progress($this->output);
                 }
