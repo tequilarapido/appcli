@@ -165,7 +165,7 @@ class Table
 
         $notWithSpecifiedEngine = array();
         foreach ($tablesEngines as $item) {
-            if (empty($item['engine']) or $item['engine'] !== $engine) {
+            if (empty($item['engine']) || $item['engine'] !== $engine) {
                 $notWithSpecifiedEngine[] = $item;
             }
         }
@@ -204,7 +204,7 @@ class Table
 
         $notWithSpecifiedCollation = array();
         foreach ($tablesCollations as $item) {
-            if (empty($item['table_collation']) or $item['table_collation'] !== $collation) {
+            if (empty($item['table_collation']) || $item['table_collation'] !== $collation) {
                 $notWithSpecifiedCollation[] = $item;
             }
         }
