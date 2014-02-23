@@ -59,17 +59,6 @@ class EnhancedOutput extends ConsoleOutput
         }
     }
 
-    public function debug($var, $dump = false, $space = false)
-    {
-        $this->writeln($this->space($space));
-        if ($dump) {
-            var_dump($var);
-        } else {
-            print_r($var);
-        }
-        $this->writeln("");
-    }
-
     private function space($space)
     {
         return $space ? "\n\n\n" : "";
