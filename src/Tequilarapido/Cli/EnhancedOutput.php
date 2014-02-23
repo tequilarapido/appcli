@@ -1,5 +1,6 @@
 <?php namespace Tequilarapido\Cli;
 
+use Herrera\Json\Exception\Exception;
 use Symfony\Component\Console\Formatter\OutputFormatterInterface;
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 use Symfony\Component\Console\Output\ConsoleOutput;
@@ -55,7 +56,7 @@ class EnhancedOutput extends ConsoleOutput
         $this->writeln("<error>$message</error>");
 
         if ($exitOnError) {
-            die("[ERROR] Execution aborted!\n");
+            throw new \Exception('[ERROR] Execution aborted!');
         }
     }
 
