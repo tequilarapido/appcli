@@ -19,6 +19,8 @@
                 "Tests",
                 "tests",
                 "tests-suite",
+                "test-suite",
+                "swiftmailer/test-suite",
                 "yaml"
             ],
             "in": "src/vendor"
