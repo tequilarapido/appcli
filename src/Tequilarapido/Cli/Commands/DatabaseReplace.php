@@ -63,7 +63,6 @@ class DatabaseReplace extends AbstractDatabaseCommand
             $queriesCount += $count;
             $this->output->writeln("                                      Finished $tableName ($count queries) ");
         }
-        //print_r(array('$allQueries'=>$allQueries));exit;
         $this->output->info("Total executed queries : $queriesCount");
 
         // End progress
