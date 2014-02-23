@@ -39,7 +39,7 @@ class FileSystem
         // If we are on windows using Cygwin, tryout Windows path
         $cmd = "cygpath -w $dir";
         $process = new Process($cmd);
-        $result = $process->run();
+        $process->run();
         if ($process->isSuccessful()) {
             return trim($process->getOutput());
         }
