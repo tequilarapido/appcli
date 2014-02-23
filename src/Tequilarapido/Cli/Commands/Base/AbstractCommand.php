@@ -39,12 +39,6 @@ abstract class AbstractCommand extends Command
         $this->input = $input;
     }
 
-    protected function iAmHungry()
-    {
-        ini_set('memory_limit', '1024M');
-        set_time_limit(0);
-    }
-
     public function table($data)
     {
         $table = $this->getHelperSet()->get('table');
