@@ -4,7 +4,7 @@ use Tequilarapido\Database\Database;
 
 class Column
 {
-    static $db_primarykeys = array();
+    protected static $db_primarykeys = array();
 
     public function scanTextColumns($database, $exclude = array())
     {

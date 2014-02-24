@@ -63,6 +63,9 @@ abstract class AbstractConfigurableCommand extends AbstractCommand
 
         // Load file
         $this->config = new Config($configFile, CLI_SCHEMA_FILE);
+        if (!$this->config->load()) {
+            $this->output->error('Please fix errors in your configuration file.');
+        }
     }
 
 

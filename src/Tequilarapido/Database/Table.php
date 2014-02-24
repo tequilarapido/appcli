@@ -140,6 +140,9 @@ class Table
     |--------------------------------------------------------------------------
     */
 
+    /**
+     * @param string $engine
+     */
     public function alterEngine($table, $engine)
     {
         $query = "ALTER TABLE $table ENGINE = $engine";
@@ -159,6 +162,9 @@ class Table
         return Database::select($query, array($database));
     }
 
+    /**
+     * @param string $engine
+     */
     public function isEngine($database, $engine)
     {
         $tablesEngines = $this->getEngines($database);
@@ -179,6 +185,10 @@ class Table
     |--------------------------------------------------------------------------
     */
 
+    /**
+     * @param string $charset
+     * @param string $collation
+     */
     public function alterCharsetAndCollation($table, $charset, $collation)
     {
         $query = "ALTER TABLE $table CONVERT TO CHARACTER SET $charset, COLLATE $collation;";
@@ -198,6 +208,9 @@ class Table
         return Database::select($query, array($database));
     }
 
+    /**
+     * @param string $collation
+     */
     public function isCollation($database, $collation)
     {
         $tablesCollations = $this->getCollations($database);

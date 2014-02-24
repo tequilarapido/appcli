@@ -57,11 +57,11 @@
                         "type": "string"
                     }
                 },
-                "config": {
+                "transport": {
                     "type": "object",
                     "required": "false",
                     "properties": {
-                        "transport": {
+                        "type": {
                             "type": "string",
                             "required": false
                         },

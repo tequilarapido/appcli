@@ -18,11 +18,9 @@ class Config
     {
         $this->file = $file;
         $this->schemaFile = $schemaFile;
-
-        $this->load();
     }
 
-    protected function load()
+    public function load()
     {
         $linter = new Json();
         $json = $linter->decodeFile($this->file);
@@ -32,9 +30,12 @@ class Config
             $linter->validate($linter->decodeFile($this->schemaFile), $json);
         } catch (JsonException $e) {
             $this->echoJsonException($e);
+            return false;
         }
 
+        // Ok ?
         $this->raw = $json;
+        return true;
     }
 
     public function getRaw()
@@ -170,27 +171,11 @@ class Config
         return $this->raw->cleanup->delete;
     }
 
-    public function getTablesToTruncate()
-    {
-        $tuncateConf = $this->getTruncateCleanup();
-        if (is_null($tuncateConf)) {
-            return null;
-        }
 
-        // Tables
-        $tables = array();
-        if (!empty($tuncateConf->simple) && is_array($tuncateConf->simple)) {
-            $tables = array_merge($tables, $tuncateConf->simple);
-        }
-
-        if (!empty($tuncateConf->multi) && is_array($tuncateConf->multi)) {
-            $multiTables = $this->getRealTables($tuncateConf->multi);
-            $tables = array_merge($tables, $multiTables);
-        }
-
-        return null;
-    }
-
+    /**
+     * @param string $command
+     * @return bool
+     */
     public function isNotifyOnForCommand($command)
     {
         return !empty($this->raw->{$command}->notify)
@@ -219,6 +204,9 @@ class Config
     }
 
 
+    /**
+     * @param JsonException $e
+     */
     private function echoJsonException($e)
     {
         echo 'Your configuration file may contain errors, ' . $e->getMessage() . PHP_EOL;
@@ -226,16 +214,4 @@ class Config
             echo ($k + 1) . ' : ' . $error . PHP_EOL;
         }
     }
-
-    private function getRealTables($genericTables)
-    {
-        $prefix = $this->getDatabasePrefix();
-        $tables = array();
-        foreach ($genericTables as $t) {
-            $pattern = '/^' . $prefix . '([0-9]+_)?' . $t . '$/';
-            $tables[] = preg_grep($pattern, $this->databaseTables);
-        }
-
-    }
-
 }

@@ -5,7 +5,7 @@ use Symfony\Component\Process\Process;
 class FileSystem
 {
 
-    public function checkDirectory($dir, $checkWritable = true)
+    public function checkDirectory($dir)
     {
         // Check if it's not empty
         if (empty($dir)) {

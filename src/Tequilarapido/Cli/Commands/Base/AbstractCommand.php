@@ -3,7 +3,6 @@
 use Datum\Datum;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\ConsoleEvents;
-use Symfony\Component\Console\Event\ConsoleTerminateEvent;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -52,7 +51,7 @@ abstract class AbstractCommand extends Command
     //
     // Time / Benchmarking stuff
     //
-    protected function elapsed($format = true)
+    protected function elapsed()
     {
         // Start
         $this->startTime = time();

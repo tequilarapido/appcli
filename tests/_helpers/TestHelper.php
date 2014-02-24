@@ -18,16 +18,18 @@ class TestHelper extends \Codeception\Module
     private $mailcatcher;
     private $mail;
 
-    public function _before()
+    public function _before(\Codeception\TestCase $test)
     {
-        // Create mailcatcher client
-        $this->mailcatcher = new Client('http://127.0.0.1:1080');
+        if ($test) {
+            // Create mailcatcher client
+            $this->mailcatcher = new Client('http://127.0.0.1:1080');
 
-        // Clean message before each test
-        $this->cleanMessages();
+            // Clean message before each test
+            $this->cleanMessages();
 
-        // Witch launcher ?
-        $this->debug('Running with LANCHER=' . $this->getLauncher());
+            // Witch launcher ?
+            $this->debug('Running with LANCHER=' . $this->getLauncher());
+        }
     }
 
     /*

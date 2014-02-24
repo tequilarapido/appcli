@@ -58,6 +58,9 @@ class EnhancedOutput extends ConsoleOutput
         }
     }
 
+    /**
+     * @param boolean $space
+     */
     private function space($space)
     {
         return $space ? "\n\n\n" : "";
