@@ -19,6 +19,10 @@ class DatabaseReplaceCest
         'A_TEST_JSON_OBJECT' => '{"type":"This is an object","url":"http://www.wordpress-381.com/uri/to/resource/"}',
     );
 
+
+    /**
+     * @param TestGuy $I
+     */
     public function run_command_with_empty_replace_configuration(TestGuy $I)
     {
         $I->wantTo('Run db:replace command with no replace configuration');
@@ -29,6 +33,9 @@ class DatabaseReplaceCest
         $I->seeInShellOutput('[WARN] There is nothing to replace according to configuration.');
     }
 
+    /**
+     * @param TestGuy $I
+     */
     public function run_command_with_replace_operations_and_notifications_disabled(TestGuy $I)
     {
         $I->wantTo('Run db:replace command');
@@ -47,6 +54,9 @@ class DatabaseReplaceCest
         $I->seeInShellOutput('No notifications sent.');
     }
 
+    /**
+     * @param TestGuy $I
+     */
     public function run_command_with_replace_operations_and_notifications_enabled_and_no_notification_config(TestGuy $I)
     {
         $I->wantTo('Run db:replace command');
@@ -65,6 +75,10 @@ class DatabaseReplaceCest
         $I->seeInShellOutput('Notify is on, but notify configuration are missing.');
     }
 
+
+    /**
+     * @param TestGuy $I
+     */
     public function run_command_with_replace_operations_and_notifications_via_mailcatcher(TestGuy $I)
     {
         $I->wantTo('Run db:replace command');

@@ -5,6 +5,9 @@ use \TestGuy;
 class InfosCest
 {
 
+    /**
+     * @param TestGuy $I
+     */
     public function get_infos_for_acme_project(TestGuy $I)
     {
         $I->wantTo('to get information about acme project configuration');

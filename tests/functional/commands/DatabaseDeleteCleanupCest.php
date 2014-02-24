@@ -5,6 +5,9 @@ use \TestGuy;
 class DatabaseDeleteCleanupCest
 {
 
+    /**
+     * @param TestGuy $I
+     */
     public function run_command_with_empty_delete_configuration(TestGuy $I)
     {
         $I->wantTo('Run db:delete command with no delete configuration');
@@ -16,6 +19,11 @@ class DatabaseDeleteCleanupCest
     }
 
 
+    /**
+     * @param TestGuy $I
+     * @env phar
+     * @env console
+     */
     public function run_command_with_multiple_delete_operations(TestGuy $I)
     {
         $I->wantTo('Run db:delete command with multiple delete operations');

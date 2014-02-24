@@ -4,7 +4,9 @@ use \TestGuy;
 
 class MaintenanceCest
 {
-
+    /**
+     * @param TestGuy $I
+     */
     public function put_maintenance_off(TestGuy $I)
     {
         $I->wantTo('Put maintenance to "off"');
@@ -14,6 +16,12 @@ class MaintenanceCest
         $I->seeInShellOutput('Maintenance mode is now off');
     }
 
+
+    /**
+     * @param TestGuy $I
+     * @env phar
+     * @env console
+     */
     public function put_maintenance_on(TestGuy $I)
     {
         $I->wantTo('Put maintenance to "on"');
@@ -24,6 +32,11 @@ class MaintenanceCest
         $I->seeFileFound('.maintenance');
     }
 
+    /**
+     * @param TestGuy $I
+     * @env phar
+     * @env console
+     */
     public function get_maintenance_status_when_it_is_off(TestGuy $I)
     {
         // Status : Off
@@ -34,6 +47,11 @@ class MaintenanceCest
         $I->seeInShellOutput('Current Maintenance mode : off');
     }
 
+    /**
+     * @param TestGuy $I
+     * @env phar
+     * @env console
+     */
     public function get_maintenance_status_when_it_is_on(TestGuy $I)
     {
         // Status : On

@@ -8,9 +8,11 @@ php:
 branches:
   only:
     - develop
+    - master
 
 env:
-  - LAUNCHER=CONSOLE
+  - LAUNCHER=console
+  - LAUNCHER=phar
 
 before_script:
   # Mailcacher server
@@ -27,7 +29,7 @@ before_script:
   - wget http://codeception.com/codecept.phar
 
 script:
-  - php codecept.phar run functional --steps
+  - php codecept.phar run functional --steps --env $LAUNCHER
 
 notifications:
   email:

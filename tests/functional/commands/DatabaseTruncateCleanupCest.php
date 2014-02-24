@@ -5,6 +5,9 @@ use \TestGuy;
 class DatabaseTruncateCleanupCest
 {
 
+    /**
+     * @param TestGuy $I
+     */
     public function run_command_with_empty_truncate_configuration(TestGuy $I)
     {
         $I->wantTo('Run db:truncate command with no truncate configuration');
@@ -15,6 +18,9 @@ class DatabaseTruncateCleanupCest
         $I->seeInShellOutput('[WARN] There is nothing to truncate according to configuration.');
     }
 
+    /**
+     * @param TestGuy $I
+     */
     public function run_command_with_simple_and_multiple_truncate(TestGuy $I)
     {
         $I->wantTo('Run db:truncate command with simple and multiple truncate');

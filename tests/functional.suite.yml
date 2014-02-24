@@ -19,7 +19,7 @@ modules:
              cleanup: true
 
 env:
-    developement: []
+    console: []
           # Change nothing
 
     phar: []

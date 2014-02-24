@@ -5,6 +5,9 @@ use \TestGuy;
 class DatabaseConvertToInnoDBCest
 {
 
+    /**
+     * @param TestGuy $I
+     */
     public function convert_all_database_tables_to_innodb(TestGuy $I)
     {
         $I->wantTo('Convert all wp_v381 tables to innodb');
