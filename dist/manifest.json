@@ -1,20 +1,2 @@
 [
-  {
-    "name":"appcli.phar",
-    "sha1":"ce3b3bca58f031fee7ab7c716ba7386decaee6e0",
-    "url":"https://github.com/tequilarapido/appcli/raw/master/dist/downloads/appcli.phar",
-    "version":"0.0.3"
-  },
-  {
-    "name":"appcli.phar",
-    "sha1":"fe99e2b9cf4903a92b0e2b85fcf7e7a7ff7be5c8",
-    "url":"https://github.com/tequilarapido/appcli/raw/master/dist/downloads/appcli.phar",
-    "version":"1.0.1"
-  },
-  {
-    "name":"appcli.phar",
-    "sha1":"bda5d0b13ecb8c818a7e048ab76d6a659f316110",
-    "url":"https://github.com/tequilarapido/appcli/raw/master/dist/downloads/appcli.phar",
-    "version":"1.0.2"
-  }
 ]

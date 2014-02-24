@@ -33,13 +33,13 @@ php ./bin/update-manifest.php $TAG
 echo - "Updating .version"
 echo $TAG > ".version"
 
-# Commit
-echo -e "Commit files"
-git add .
-git commit -m "Releasing $TAG version"
-
-# Tag & build master branch
-echo "Creating tag $TAG"
-git checkout master
-git tag ${TAG}
-git tag -a $TAG -m 'Created tag for version $TAG'
+## Commit
+#echo -e "Commit files"
+#git add .
+#git commit -m "Releasing $TAG version"
+#
+## Tag & build master branch
+#echo "Creating tag $TAG"
+#git checkout master
+#git tag ${TAG}
+#git tag -a $TAG -m 'Created tag for version $TAG'

@@ -1,4 +1,5 @@
 * text=auto
+*.sh eol=lf
 
 # Keep separate file on each branch
 .travis.yml merge=ours
