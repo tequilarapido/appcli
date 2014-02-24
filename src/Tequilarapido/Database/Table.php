@@ -140,6 +140,9 @@ class Table
     |--------------------------------------------------------------------------
     */
 
+    /**
+     * @param string $engine
+     */
     public function alterEngine($table, $engine)
     {
         $query = "ALTER TABLE $table ENGINE = $engine";
@@ -182,6 +185,10 @@ class Table
     |--------------------------------------------------------------------------
     */
 
+    /**
+     * @param string $charset
+     * @param string $collation
+     */
     public function alterCharsetAndCollation($table, $charset, $collation)
     {
         $query = "ALTER TABLE $table CONVERT TO CHARACTER SET $charset, COLLATE $collation;";
