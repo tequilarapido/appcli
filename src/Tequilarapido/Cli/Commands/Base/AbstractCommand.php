@@ -51,7 +51,7 @@ abstract class AbstractCommand extends Command
     //
     // Time / Benchmarking stuff
     //
-    protected function elapsed($format = true)
+    protected function elapsed()
     {
         // Start
         $this->startTime = time();
