@@ -3,6 +3,7 @@
 use Hazbo\Json\Formatter;
 use Herrera\Json\Exception\JsonException;
 use Herrera\Json\Json;
+use Herrera\Phar\Update\Exception\Exception;
 
 /**
  * Manage configuration from the json configuration file
@@ -18,11 +19,9 @@ class Config
     {
         $this->file = $file;
         $this->schemaFile = $schemaFile;
-
-        $this->load();
     }
 
-    protected function load()
+    public function load()
     {
         $linter = new Json();
         $json = $linter->decodeFile($this->file);
@@ -32,9 +31,12 @@ class Config
             $linter->validate($linter->decodeFile($this->schemaFile), $json);
         } catch (JsonException $e) {
             $this->echoJsonException($e);
+            return false;
         }
 
+        // Ok ?
         $this->raw = $json;
+        return true;
     }
 
     public function getRaw()
