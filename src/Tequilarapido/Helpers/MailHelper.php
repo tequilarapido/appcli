@@ -15,6 +15,9 @@ class MailHelper
         $this->config = $config;
     }
 
+    /**
+     * @param string $commandName
+     */
     public function send($mail, $commandName)
     {
         // to & from
@@ -72,6 +75,10 @@ class MailHelper
         return $transport;
     }
 
+    /**
+     * @param string $subject
+     * @param string $body
+     */
     private function sendMessageUsingTransport($transport, $from, $to, $subject, $body)
     {
         $message = Swift_Message::newInstance();

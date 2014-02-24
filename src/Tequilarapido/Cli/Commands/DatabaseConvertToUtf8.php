@@ -56,6 +56,10 @@ class DatabaseConvertToUtf8 extends AbstractDatabaseCommand
         }
     }
 
+    /**
+     * @param string $charset
+     * @param string $collation
+     */
     protected function setCharsetAndCollation($charset, $collation)
     {
         $this->output->title("Setting database charset to $charset and collation to $collation");

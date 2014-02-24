@@ -191,6 +191,9 @@ class Config
         return null;
     }
 
+    /**
+     * @param string $command
+     */
     public function isNotifyOnForCommand($command)
     {
         return !empty($this->raw->{$command}->notify)
@@ -219,6 +222,9 @@ class Config
     }
 
 
+    /**
+     * @param JsonException $e
+     */
     private function echoJsonException($e)
     {
         echo 'Your configuration file may contain errors, ' . $e->getMessage() . PHP_EOL;

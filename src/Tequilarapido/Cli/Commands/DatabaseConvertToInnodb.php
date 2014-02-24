@@ -55,6 +55,9 @@ class DatabaseConvertToInnodb extends AbstractDatabaseCommand
         }
     }
 
+    /**
+     * @param string $engine
+     */
     protected function setEngine($engine)
     {
         $this->output->title("Setting database engine to $engine");

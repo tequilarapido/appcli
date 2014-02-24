@@ -47,6 +47,9 @@ class DatabaseTruncateCleanup extends AbstractDatabaseCommand
         $this->outputGain();
     }
 
+    /**
+     * @param \stdClass $cleanupConf
+     */
     protected function filterByConf($cleanupConf)
     {
         $tables = array();
