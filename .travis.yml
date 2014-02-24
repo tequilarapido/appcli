@@ -7,11 +7,10 @@ php:
 
 branches:
   only:
-    - master
+    - develop
 
 env:
   - LAUNCHER=CONSOLE
-  - LAUNCHER=PHAR
 
 before_script:
   # Mailcacher server
