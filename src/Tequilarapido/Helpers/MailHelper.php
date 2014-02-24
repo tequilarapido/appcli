@@ -8,7 +8,7 @@ use Tequilarapido\Cli\Config\Config;
 
 class MailHelper
 {
-    protected $confi;
+    protected $config;
 
     public function __construct(Config $config)
     {
