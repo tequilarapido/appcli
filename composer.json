@@ -10,17 +10,17 @@
     ],
     "require": {
         "vlucas/phpdotenv": "1.0.6",
-        "symfony/console": "2.3.0",
-        "symfony/event-dispatcher": "2.3.0",
-        "symfony/process": "2.3.0",
-        "symfony/filesystem": "2.3.0",
-        "illuminate/database": "4.0.5",
+        "symfony/console": "2.4.2",
+        "symfony/event-dispatcher": "2.4.2",
+        "symfony/process": "2.4.2",
+        "symfony/filesystem": "2.4.2",
+        "illuminate/database": "4.1.22",
         "dandoescode/datum": "1.0.0",
-        "herrera-io/json": "~1.0",
-        "hazbo/json-formatter": "dev-master",
+        "herrera-io/json": "1.0.3",
         "swiftmailer/swiftmailer": "5.0.3",
         "tequilarapido/php-serialized": "1.0.2",
-        "kherge/amend": "3.0.3"
+        "kherge/amend": "3.0.3",
+        "hazbo/json-formatter": "dev-master"
     },
     "require-dev": {
         "guzzle/guzzle": "v3.8.1"
