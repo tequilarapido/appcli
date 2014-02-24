@@ -1,1 +1,4 @@
 * text=auto
+
+# Keep separate file on each branch
+.travis.yml merge=ours
