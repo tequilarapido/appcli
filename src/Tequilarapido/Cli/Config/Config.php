@@ -3,7 +3,6 @@
 use Hazbo\Json\Formatter;
 use Herrera\Json\Exception\JsonException;
 use Herrera\Json\Json;
-use Herrera\Phar\Update\Exception\Exception;
 
 /**
  * Manage configuration from the json configuration file
@@ -172,29 +171,10 @@ class Config
         return $this->raw->cleanup->delete;
     }
 
-    public function getTablesToTruncate()
-    {
-        $tuncateConf = $this->getTruncateCleanup();
-        if (is_null($tuncateConf)) {
-            return null;
-        }
-
-        // Tables
-        $tables = array();
-        if (!empty($tuncateConf->simple) && is_array($tuncateConf->simple)) {
-            $tables = array_merge($tables, $tuncateConf->simple);
-        }
-
-        if (!empty($tuncateConf->multi) && is_array($tuncateConf->multi)) {
-            $multiTables = $this->getRealTables($tuncateConf->multi);
-            $tables = array_merge($tables, $multiTables);
-        }
-
-        return null;
-    }
 
     /**
      * @param string $command
+     * @return bool
      */
     public function isNotifyOnForCommand($command)
     {
@@ -234,16 +214,4 @@ class Config
             echo ($k + 1) . ' : ' . $error . PHP_EOL;
         }
     }
-
-    private function getRealTables($genericTables)
-    {
-        $prefix = $this->getDatabasePrefix();
-        $tables = array();
-        foreach ($genericTables as $t) {
-            $pattern = '/^' . $prefix . '([0-9]+_)?' . $t . '$/';
-            $tables[] = preg_grep($pattern, $this->databaseTables);
-        }
-
-    }
-
 }
