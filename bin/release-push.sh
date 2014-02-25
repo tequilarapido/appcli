@@ -16,7 +16,7 @@ git add .
 git commit -m "$TAG Release."
 
 # Reforce to last commit
-git -f tag ${TAG}
+git tag --force ${TAG}
 
 # Push
 git push origin master
