@@ -2,7 +2,7 @@
     "chmod": "0755",
     "directories": [
         "res",
-        "src"
+        "src/Tequilarapido"
     ],
     "files": [
         "console.php",
