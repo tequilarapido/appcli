@@ -1,8 +1,8 @@
 [
   {
     "name":"appcli.phar",
-    "sha1":"c95c2eafc8a152098c5abb664e22efef9f0007e9",
+    "sha1":"ac91a7902b928000a1c4c4da9fba287ec49b0808",
     "url":"https://github.com/tequilarapido/appcli/raw/master/dist/downloads/appcli.phar",
-    "version":"1.0.3"
+    "version":"1.0.4"
   }
 ]
