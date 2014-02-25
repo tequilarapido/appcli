@@ -5,6 +5,9 @@
 
 set -e
 BASEDIR=$(dirname $0)
+SCRIPT=$(readlink -f $0)
+DIR_SCRIPT=`dirname $SCRIPT`
+DIR_PHAR=`realpath "$DIR_SCRIPT/../dist/downloads"`
 
 # Version increment, TAG?
 version_increment='patch'
@@ -19,7 +22,17 @@ fi
 echo -e "Getting next version ..."
 semver inc "$version_increment"
 TAG=`semver tag|sed "s/v//"`
-echo -e "Releasing version $TAG"
+
+# Backup last version for phar update tests
+pharfile="$DIR_PHAR/appcli.phar"
+previousPharFile="$DIR_PHAR/appcli-previousversion.phar"
+if [ -f "$pharfile" ]; then
+    cp -fr "$pharfile" "$previousPharFile"
+fi
+
+# Tagging version in git, so box will pickup the right version
+echo -e "Tagging version $TAG"
+git tag ${TAG}
 
 # Build phar
 echo "Building version $TAG"
@@ -33,13 +46,5 @@ php ./bin/update-manifest.php $TAG
 echo - "Updating .version"
 echo $TAG > ".version"
 
-## Commit
-#echo -e "Commit files"
-#git add .
-#git commit -m "Releasing $TAG version"
-#
-## Tag & build master branch
-#echo "Creating tag $TAG"
-#git checkout master
-#git tag ${TAG}
-#git tag -a $TAG -m 'Created tag for version $TAG'
+# End.
+echo "Done. You must commit/push changes manually after verification."
