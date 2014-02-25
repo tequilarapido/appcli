@@ -4,5 +4,11 @@
     "sha1":"ac91a7902b928000a1c4c4da9fba287ec49b0808",
     "url":"https://github.com/tequilarapido/appcli/raw/master/dist/downloads/appcli.phar",
     "version":"1.0.4"
+  },
+  {
+    "name":"appcli.phar",
+    "sha1":"1c7f9820f359004b33ed7c6800ae2337d988537f",
+    "url":"https://github.com/tequilarapido/appcli/raw/master/dist/downloads/appcli.phar",
+    "version":"1.0.5"
   }
 ]
