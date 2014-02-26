@@ -18,6 +18,7 @@ before_script:
   # Mailcacher server
   - gem install mailcatcher
   - mailcatcher
+  - echo 'sendmail_path = "/usr/bin/env /var/lib/gems/1.8/bin/catchmail "' | sudo tee "/home/travis/.phpenv/versions/`php -i|grep "PHP Version"|head -n 1|grep -o -P '\d+\.\d+\.\d+.*'`/etc/conf.d/sendmail.ini"
 
   # Database
   - echo "USE mysql;\nUPDATE user SET password=PASSWORD('root') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root

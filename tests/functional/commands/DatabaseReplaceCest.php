@@ -35,6 +35,8 @@ class DatabaseReplaceCest
 
     /**
      * @param TestGuy $I
+     * @env console
+     * @env phar
      */
     public function run_command_with_replace_operations_and_notifications_disabled(TestGuy $I)
     {
@@ -102,5 +104,35 @@ class DatabaseReplaceCest
         $I->seeThatEmailIsInRecipients('nbourguig@gmail.com');
         $I->seeThatEmailSubjectEquals('[Wordpress 3.8.1][db:replace] : Done.');
         $I->seeThatEmailTextContains('Command run at :');
+        $I->seeThatEmailTextContains('Using file : ');
+    }
+
+    /**
+     * @param TestGuy $I
+     */
+    public function run_command_with_replace_operations_and_notifications_via_mailcatcher_with_sendmail(TestGuy $I)
+    {
+        $I->wantTo('Run db:replace command');
+        $I->run('db:replace tests/_data/fixtures/configuration/wp-381-with-replace-operations-with-notification-mailcatcher-sendmail.json');
+
+        $I->dontSeeInShellOutput('Error');
+
+        $I->seeInShellOutput('Analysing database : looking for text columns ...');
+        $I->seeInShellOutput('Total executed queries : 11');
+
+        foreach (static::$wpOptionsExpectedOptions as $optionName => $expectedOptionValue) {
+            $I->expect("That the option <$optionName> option has been replaced correctly");
+            $I->seeInDatabase('wp_options', array('option_name' => $optionName, 'option_value' => $expectedOptionValue));
+        }
+
+        // notification ?
+        $I->seeInShellOutput('Notification sent.');
+        $I->getLastMessage();
+        $I->seeThatEmailIsSent();
+        $I->seeThatEmailSenderEquals('notify@appcli-example.com');
+        $I->seeThatEmailIsInRecipients('nbourguig@gmail.com');
+        $I->seeThatEmailSubjectEquals('[Wordpress 3.8.1][db:replace] : Done.');
+        $I->seeThatEmailTextContains('Command run at :');
+        $I->seeThatEmailTextContains('Using file : ');
     }
 }

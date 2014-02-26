@@ -7,3 +7,17 @@
 * Install and run mailcatcher
     gem install mailcatcher
     mailcatcher
+
+* For test using mail via sendmail, you have to change your php.ini settings
+ * On windows
+
+         SMTP = 127.0.0.1
+         smtp_port = 1025
+         sendmail_path = "C:\cygwin\bin\catchmail.bat"
+
+ * On Unix
+
+         sendmail_path = "/usr/bin/env /var/lib/gems/1.8/bin/catchmail"
+
+
+

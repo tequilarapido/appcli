@@ -32,6 +32,7 @@ class MailHelper
         $body = array();
         $body[] = $givenBody;
         $body[] = 'Command run at : ' . Carbon::now()->format('Y-m-d H:i:s');
+        $body[] = 'Using file : ' . $this->config->getFile();
         $body = implode("\n", $body);
 
         // Transport
