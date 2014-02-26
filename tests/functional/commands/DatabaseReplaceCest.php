@@ -108,6 +108,8 @@ class DatabaseReplaceCest
     }
 
     /**
+     *
+     * @env nosendmail
      * @param TestGuy $I
      */
     public function run_command_with_replace_operations_and_notifications_via_mailcatcher_with_sendmail(TestGuy $I)
