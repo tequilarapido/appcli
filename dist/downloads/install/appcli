@@ -1,0 +1,10 @@
+#!/bin/sh
+
+dir=$(d=$(dirname "$0"); cd "$d" && pwd)
+
+if command -v 'cygpath' >/dev/null 2>&1; then
+  dir=$(cygpath -m $dir);
+fi
+
+dir=$(echo $dir | sed 's/ /\ /g')
+php "${dir}/appcli.phar" $*
