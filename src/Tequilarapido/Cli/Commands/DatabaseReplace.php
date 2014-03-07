@@ -50,13 +50,11 @@ class DatabaseReplace extends AbstractDatabaseCommand
 
         // Process
         $queriesCount = 0;
-        $allQueries = array();
         foreach ($textColumns as $tableName => $tableInfos) {
             $progress->advance();
             $this->output->writeln(" : Processing $tableName  ");
             $queries = $this->processTable($tableName, $tableInfos, $replacements);
             $count = count($queries);
-            $allQueries = array_merge($allQueries, $queries);
             $queriesCount += $count;
             $this->output->writeln("                                      Finished $tableName ($count queries) ");
         }
