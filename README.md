@@ -44,6 +44,43 @@ Run the command above, if everything is ok, it will show you the version of the 
 ![appcli version](http://imgur.com/A1lruYw.png)
 
 
+# Update
+
+Just run
+
+    appcli self-update
+
+# Commands
+
+##  Maintenance
+
+This command can be helpful to take website down or to bring it up. It can be used before
+and after commands that take time to be executed.
+
+This command just create or remove a `.maintenance` file on the server. The logic of maintenance must be
+implemented by the website according the existance or not of this file.
+
+    # Put website on maintenance
+    appcli maintenance on
+
+    # Bring up the website
+    appcli maintenance off
+
+    # Get the current status of maintenance
+    appcli maintenance status
+
+
+##
+
+
+
+
+
+
+
+
+
+
 
 
 
