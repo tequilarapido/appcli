@@ -69,8 +69,54 @@ implemented by the website according the existance or not of this file.
     # Get the current status of maintenance
     appcli maintenance status
 
+## Convert tables to InnoDB
 
-##
+This command convert all table of database given in configuration file to utf8
+
+### Config file
+
+    #Configuration file : /path/to/config-file.json
+    {
+        "project": "Project name",
+
+        "database": {
+            "host": "127.0.0.1",
+            "database": "wp_v381",
+            "username": "root",
+            "password": "root",
+            "prefix": "wp_"
+        }
+    }
+
+### Command
+
+    appcli db:innodb /path/to/config-file.json
+
+###  Result example
+
+    -------------------------------------------------
+     Setting database engine to InnoDB
+    -------------------------------------------------
+     wp_1000_comments
+      1/13 [==>-------------------------]   7% wp_1000_posts
+      2/13 [====>-----------------------]  15% wp_commentmeta
+      3/13 [======>---------------------]  23% wp_comments
+      4/13 [========>-------------------]  30% wp_links
+      5/13 [==========>-----------------]  38% wp_options
+      6/13 [============>---------------]  46% wp_postmeta
+      7/13 [===============>------------]  53% wp_posts
+      8/13 [=================>----------]  61% wp_term_relationships
+      9/13 [===================>--------]  69% wp_term_taxonomy
+     10/13 [=====================>------]  76% wp_terms
+     11/13 [=======================>----]  84% wp_usermeta
+     12/13 [=========================>--]  92% wp_users
+     13/13 [============================] 100%
+     Done. All tables are now InnoDB
+
+
+
+
+
 
 
 
