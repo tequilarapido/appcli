@@ -25,7 +25,6 @@ class DatabaseReplaceCest
      */
     public function run_command_with_empty_replace_configuration(TestGuy $I)
     {
-        $I->wantTo('Run db:replace command with no replace configuration');
         $I->expect('commands will run, and warns us about empty config.');
         $I->run('db:replace tests/_data/fixtures/configuration/wp-381.json');
 
@@ -35,12 +34,9 @@ class DatabaseReplaceCest
 
     /**
      * @param TestGuy $I
-     * @env console
-     * @env phar
      */
     public function run_command_with_replace_operations_and_notifications_disabled(TestGuy $I)
     {
-        $I->wantTo('Run db:replace command');
         $I->run('db:replace tests/_data/fixtures/configuration/wp-381-with-replace-operations.json');
 
         $I->dontSeeInShellOutput('Error');
@@ -59,9 +55,29 @@ class DatabaseReplaceCest
     /**
      * @param TestGuy $I
      */
+    public function run_command_with_replace_operations_and_notifications_disabled_and_using_transactions(TestGuy $I)
+    {
+        $I->run('db:replace --use-transactions tests/_data/fixtures/configuration/wp-381-with-replace-operations.json');
+
+        $I->dontSeeInShellOutput('Error');
+
+        $I->seeInShellOutput('Analysing database : looking for text columns ...');
+        $I->seeInShellOutput('Queries were executed using transactions.');
+        $I->seeInShellOutput('Total executed queries : 11');
+
+        foreach (static::$wpOptionsExpectedOptions as $optionName => $expectedOptionValue) {
+            $I->expect("That the option <$optionName> option has been replaced correctly");
+            $I->seeInDatabase('wp_options', array('option_name' => $optionName, 'option_value' => $expectedOptionValue));
+        }
+
+        $I->seeInShellOutput('No notifications sent.');
+    }
+
+    /**
+     * @param TestGuy $I
+     */
     public function run_command_with_replace_operations_and_notifications_enabled_and_no_notification_config(TestGuy $I)
     {
-        $I->wantTo('Run db:replace command');
         $I->run('db:replace tests/_data/fixtures/configuration/wp-381-with-replace-operations-with-notification-but-no-config.json');
 
         $I->dontSeeInShellOutput('Error');
@@ -83,7 +99,6 @@ class DatabaseReplaceCest
      */
     public function run_command_with_replace_operations_and_notifications_via_mailcatcher(TestGuy $I)
     {
-        $I->wantTo('Run db:replace command');
         $I->run('db:replace tests/_data/fixtures/configuration/wp-381-with-replace-operations-with-notification-mailcatcher.json');
 
         $I->dontSeeInShellOutput('Error');
@@ -114,7 +129,6 @@ class DatabaseReplaceCest
      */
     public function run_command_with_replace_operations_and_notifications_via_mailcatcher_with_sendmail(TestGuy $I)
     {
-        $I->wantTo('Run db:replace command');
         $I->run('db:replace tests/_data/fixtures/configuration/wp-381-with-replace-operations-with-notification-mailcatcher-sendmail.json');
 
         $I->dontSeeInShellOutput('Error');

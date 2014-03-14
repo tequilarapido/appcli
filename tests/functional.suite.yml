@@ -24,3 +24,6 @@ env:
 
     phar: []
           # Change nothing
+
+    nosendmail: []
+            # Change nothing
