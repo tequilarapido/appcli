@@ -52,7 +52,7 @@ Just run
 
 # Commands
 
-##  Maintenance
+##  [maintenance] Maintenance
 
 This command can be helpful to take website down or to bring it up. It can be used before
 and after commands that take time to be executed.
@@ -69,9 +69,9 @@ implemented by the website according the existance or not of this file.
     # Get the current status of maintenance
     appcli maintenance status
 
-## Convert tables to InnoDB
+## [db:innodb] Convert tables to InnoDB
 
-This command convert all table of database given in configuration file to utf8
+This command convert all tables to InnoDB
 
 ### Config file
 
@@ -112,6 +112,53 @@ This command convert all table of database given in configuration file to utf8
      12/13 [=========================>--]  92% wp_users
      13/13 [============================] 100%
      Done. All tables are now InnoDB
+
+
+## [db:utf8] Convert tables to utf8/utf8_general_ci
+
+This command convert all tables to utf8/utf8_general_ci
+
+### Config file
+
+    #Configuration file : /path/to/config-file.json
+    {
+        "project": "Project name",
+
+        "database": {
+            "host": "127.0.0.1",
+            "database": "wp_v381",
+            "username": "root",
+            "password": "root",
+            "prefix": "wp_"
+        }
+    }
+
+### Command
+
+    appcli db:innodb /path/to/config-file.json
+
+###  Result example
+
+    -------------------------------------------------
+     Setting database charset to utf8 and collation to utf8_general_ci
+    -------------------------------------------------
+     wp_1000_comments
+      1/13 [==>-------------------------]   7% wp_1000_posts
+      2/13 [====>-----------------------]  15% wp_commentmeta
+      3/13 [======>---------------------]  23% wp_comments
+      4/13 [========>-------------------]  30% wp_links
+      5/13 [==========>-----------------]  38% wp_options
+      6/13 [============>---------------]  46% wp_postmeta
+      7/13 [===============>------------]  53% wp_posts
+      8/13 [=================>----------]  61% wp_term_relationships
+      9/13 [===================>--------]  69% wp_term_taxonomy
+     10/13 [=====================>------]  76% wp_terms
+     11/13 [=======================>----]  84% wp_usermeta
+     12/13 [=========================>--]  92% wp_users
+     13/13 [============================] 100%
+     Done. All table are now utf8/utf8_general_ci
+
+     Took about 0 min. ( 2 sec.)
 
 
 
