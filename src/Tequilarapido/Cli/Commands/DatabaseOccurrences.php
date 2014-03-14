@@ -137,6 +137,12 @@ class DatabaseOccurrences extends AbstractDatabaseCommand
             }
         }
 
+        // No occurrence ?
+        if ($total == 0)
+        {
+            $this->output->info('None.');
+        }
+
         // Recap
         $this->output->title('Total ');
         $this->output->success('Total occurrences : ' . $total);
