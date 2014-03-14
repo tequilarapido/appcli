@@ -75,5 +75,11 @@ abstract class AbstractCommand extends Command
         return $this->startTime;
     }
 
+    protected function iAmHungry($memory_limit = '1024M')
+    {
+        ini_set('memory_limit', $memory_limit);
+        set_time_limit(0);
+    }
+
 
 }

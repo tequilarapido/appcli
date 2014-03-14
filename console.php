@@ -33,6 +33,7 @@ $application->addCommands(array(
     new Commands\DatabaseTruncateCleanup,
     new Commands\DatabaseDeleteCleanup,
     new Commands\DatabaseReplace,
+    new Commands\DatabaseOccurrences(),
 ));
 
 // run console

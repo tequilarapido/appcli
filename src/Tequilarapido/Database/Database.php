@@ -80,5 +80,20 @@ class Database
         return Capsule::table($table);
     }
 
+    public static function beginTransaction()
+    {
+        return Capsule::connection()->beginTransaction();
+    }
+
+    public static function commit()
+    {
+        return Capsule::connection()->commit();
+    }
+
+    public static function rollback()
+    {
+        return Capsule::connection()->rollBack();
+    }
+
 
 }
