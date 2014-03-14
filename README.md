@@ -5,11 +5,11 @@
 [![Dependency Status](https://www.versioneye.com/user/projects/530b6d34ec1375e93b00007a/badge.png)](https://www.versioneye.com/user/projects/530b6d34ec1375e93b00007a)
 
 
-# Installation
+## Installation
 
 TEQUILARAPIDO appcli is a phar. So installation is the same as composer.
 
-## *nix
+### *nix
 
     # Download latest release directy to /usr/local/bin for easy access and make it executable
     cd /usr/local/bin
@@ -18,7 +18,7 @@ TEQUILARAPIDO appcli is a phar. So installation is the same as composer.
 
 
 
-## Windows (cygwin compatible)
+### Windows (cygwin compatible)
 
     # 1/ Create a directory for the app (in c:\ProgramData for instance)
     cd "c:\ProgramData"
@@ -35,7 +35,7 @@ TEQUILARAPIDO appcli is a phar. So installation is the same as composer.
 
     # 4/ Restart your console if opened.
 
-## Test your install
+### Test your install
 
 Run the command above, if everything is ok, it will show you the version of the installed appcli.
 
@@ -44,15 +44,15 @@ Run the command above, if everything is ok, it will show you the version of the 
 ![appcli version](http://imgur.com/A1lruYw.png)
 
 
-# Update
+## Update
 
 Just run
 
     appcli self-update
 
-# Commands
+## Commands
 
-##  [maintenance] Maintenance
+###  [maintenance] Maintenance
 
 This command can be helpful to take website down or to bring it up. It can be used before
 and after commands that take time to be executed.
@@ -69,11 +69,11 @@ implemented by the website according the existance or not of this file.
     # Get the current status of maintenance
     appcli maintenance status
 
-## [db:innodb] Convert tables to InnoDB
+### [db:innodb] Convert tables to InnoDB
 
 This command convert all tables to InnoDB
 
-### Config file
+#### Config file
 
     #Configuration file : /path/to/config-file.json
     {
@@ -88,11 +88,11 @@ This command convert all tables to InnoDB
         }
     }
 
-### Command
+#### Command
 
     appcli db:innodb /path/to/config-file.json
 
-###  Result example
+####  Result example
 
     -------------------------------------------------
      Setting database engine to InnoDB
@@ -114,11 +114,11 @@ This command convert all tables to InnoDB
      Done. All tables are now InnoDB
 
 
-## [db:utf8] Convert tables to utf8/utf8_general_ci
+### [db:utf8] Convert tables to utf8/utf8_general_ci
 
 This command convert all tables to utf8/utf8_general_ci
 
-### Config file
+#### Config file
 
     #Configuration file : /path/to/config-file.json
     {
@@ -133,11 +133,11 @@ This command convert all tables to utf8/utf8_general_ci
         }
     }
 
-### Command
+#### Command
 
     appcli db:innodb /path/to/config-file.json
 
-###  Result example
+####  Result example
 
     -------------------------------------------------
      Setting database charset to utf8 and collation to utf8_general_ci
@@ -161,12 +161,12 @@ This command convert all tables to utf8/utf8_general_ci
      Took about 0 min. ( 2 sec.)
 
 
-## [db:truncate] Truncate database tables
+### [db:truncate] Truncate database tables
 
 This command truncate database tables.
 
 
-### Config file
+#### Config file
 
 The config for this command goes under `cleanup.truncate` section.
 We can specify two operations types:
@@ -203,11 +203,11 @@ We can specify two operations types:
     
     }
 
-### Command
+#### Command
 
     appcli db:truncate /path/to/config-file.json
 
-###  Result example
+####  Result example
 
     Truncating wp_comments ...
     Truncating wp_posts ...
