@@ -20,7 +20,7 @@ Configuration sections :
 
 ##### Database informations
 
-this goes under `databaseè  section
+this goes under `database` section
 
 ```json
 "database": {
