@@ -14,7 +14,7 @@
         "symfony/event-dispatcher": "2.4.2",
         "symfony/process": "2.4.2",
         "symfony/filesystem": "2.4.2",
-        "illuminate/database": "4.1.22",
+        "illuminate/database": "4.1.23",
         "dandoescode/datum": "1.0.0",
         "herrera-io/json": "1.0.3",
         "swiftmailer/swiftmailer": "5.0.3",

@@ -62,7 +62,7 @@ class DatabaseReplace extends AbstractDatabaseCommand
         $this->output->info("Total executed queries : $queriesCount");
 
         // Mail
-        $this->notify();
+        $this->sendNotification();
     }
 
     protected function startProgress($total)
@@ -72,14 +72,14 @@ class DatabaseReplace extends AbstractDatabaseCommand
         return $progress;
     }
 
-    protected function notify()
+    protected function sendNotification()
     {
         $mail = array(
             'subject' => 'Done.',
             'body' => ''
         );
 
-        parent::notify($mail);
+        $this->notify($mail);
     }
 
     /**
