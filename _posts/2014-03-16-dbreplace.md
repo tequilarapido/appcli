@@ -8,27 +8,29 @@ order: 5
 
 
 This command can be used, to search and replace strings inside database.
-It will replace safely string in serialized PHP or Json objects.
+It will replace safely string in serialized PHP or JSON objects.
 We use this command to port wordpress database from a domain to another as part of our workflow
 for deploying a wordpress application on multiple environements (local, staging, production ...).
 
-> Warning : replace informations will be performed on database. So backup your database before running this command.
+> Warning : You may want to backup your databse before running this command. Replace operations are made live on specified database
 
 #### Config file
 
-this command uses multiple sections on the config file.
+Configuration sections :
 
 ##### Database informations
 
 this goes under `databaseè  section
 
-    "database": {
-        "host": "127.0.0.1",
-        "database": "wp_v381",
-        "username": "root",
-        "password": "---",
-        "prefix": "wp_"
-    },
+```json
+"database": {
+    "host": "127.0.0.1",
+    "database": "wp_v381",
+    "username": "root",
+    "password": "---",
+    "prefix": "wp_"
+}
+```
 
 ##### Notification informations
 
@@ -36,26 +38,28 @@ this can be used for other commands. if specified, the settings will be used to 
 a notification mail at the end of the command. This is handful, if this command is run by another person, maybe IT / hosting team,
 and you want to have result right away, or to share this information with your team.
 
-    "notify": {
-        "from": "notify@appcli-example.com",
-        "to": [
-            "team@work.com"
-        ],
-        "transport": {
-            "type": "smtp",
-            "parameters": {
-                "host": "127.0.0.1",
-                "port": 1025
-            }
+```json
+"notify": {
+    "from": "notify@appcli-example.com",
+    "to": [
+        "team@work.com"
+    ],
+    "transport": {
+        "type": "smtp",
+        "parameters": {
+            "host": "127.0.0.1",
+            "port": 1025
         }
-    },
+    }
+}
+```
 
 
 The notification will be sent, only if `replace.notify` is true. (see below)
 
 * Transport type :
-As transport type, you can choose `smtp` and specify `parameters`,
-or specify `sendmail`, and leave parameters empty.
+
+As transport type, you can choose `smtp` and specify `parameters`, or specify `sendmail`, and leave parameters empty.
 
 
 
@@ -66,9 +70,8 @@ this goes under `replace` section.
 
 * Replacements :
 You can specify here multiple {from, to} replacements.
-* Notify : if true, notification will be sent.
-* excludeTables : An array of table to excludes while searching for `replacement.from`
-occurrences.
+* notify : if true, notification will be sent.
+* excludeTables : An array of table to exclude while searching for `replacement.from` occurrences.
 
 ```json
 "replace": {
@@ -91,13 +94,10 @@ occurrences.
 
 #### Command
 
-The command accept as option `--use-transactions`. This wrap all the sql update statements
-into transactions for each table. this can dramatically reduce the time needed to perform the db:replace operation
-on big databases.
+##### Option `--use-transactions` :
+Wrapw all the sql update statements into one transaction for each table.  this can dramatically reduce the time needed to perform update queries.
 
-This is to be prefered even for small databases.
-
-
+    # 
     appcli db:replace /path/to/config-file.json
 
     # using transactions
