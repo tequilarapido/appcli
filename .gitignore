@@ -14,4 +14,7 @@ composer.lock
 # Application generated files
 .maintenance
 
+# Doc
+_site
+
 tests/_data/fixtures/configuration/concrete
