@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f79b9344-ccbd-4170-ab62-001580bcf866" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    </list>
+    <ignored path="appcli.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394809943418" ignored="false" />
+    <file path="/release.sh" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1393348483881" ignored="false" />
+    <file path="/release-prepare.sh" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1393350382345" ignored="false" />
+    <file path="/release-push.sh" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1393350852157" ignored="false" />
+    <file path="/DatabaseReplaceCest.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394805883228" ignored="false" />
+    <file path="/testmail.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1393421861881" ignored="false" />
+    <file path="/functional.suite.yml" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394806455053" ignored="false" />
+    <file path="/MailHelper.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1393423068116" ignored="false" />
+    <file path="/README.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394821572497" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/renault-declic/lbn/wp-cli/lbnrecette-to-lbnpreprod.json" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1393436937525" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/renault-declic/lbn/wp-cli/awhprod-to-lbnrecette.json" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1393436937525" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/renault-declic/wordpress/config/host/lbn-recette.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1393436937525" ignored="false" />
+    <file path="/PharUpdateCest.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394119063980" ignored="false" />
+    <file path="/TestHelper.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394110353969" ignored="false" />
+    <file path="/_bootstrap.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394110865013" ignored="false" />
+    <file path="/a.dummy" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394813684557" ignored="false" />
+    <file path="/AbstractCommand.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394804993280" ignored="false" />
+    <file path="/Application.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394113772213" ignored="false" />
+    <file path="/release-test.sh" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394120153426" ignored="false" />
+    <file path="/appcli" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394123226964" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/sbm/ressources/crons/cron-05-cache.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394125318618" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/sbm/app/config/config/local.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394125344024" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/sbm/app/wp-content/themes/sbm/templates/plugins/teq-quotations/soins/footer-resa-soins.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394125394551" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/sbm/app/wp-content/plugins/teq-google-sitemap/templates/sitemap.xsl" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394125394551" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/sbm/ressources/appcli/prod-to-localhost.json" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394129035963" ignored="false" />
+    <file path="/prod-to-localhost.json" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394125928362" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/sbm/ressources/appcli/localhost-to-sbmrecette.json" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394126880033" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/sbm/rewrite.log" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394126960864" ignored="false" />
+    <file path="/rewrite.log" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394126830750" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/sbm/.gitignore" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394126982883" ignored="false" />
+    <file path="/.gitignore" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394126973626" ignored="false" />
+    <file path="/DatabaseOccurrence.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394789973484" ignored="false" />
+    <file path="/console.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394786352337" ignored="false" />
+    <file path="/DatabaseOccurrences.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394788482530" ignored="false" />
+    <file path="/DatabaseOccurrencesCest.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394789745549" ignored="false" />
+    <file path="/test-phar.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394792536055" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/sbm/app/config/config/lbn-recette.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394795131390" ignored="false" />
+    <file path="$PROJECT_DIR$/../../www/sbm/ressources/appcli/localhost-to-lbnrecette.json" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394795055067" ignored="false" />
+    <file path="/localhost-to-lbnrecette.json" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394795055067" ignored="false" />
+    <file path="/DatabaseReplace.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394807306426" ignored="false" />
+    <file path="/Database.php" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394803149359" ignored="false" />
+    <file path="/README.markdown" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394811958277" ignored="false" />
+    <file path="/_config.yml" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394989287650" ignored="false" />
+    <file path="/index.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394982568534" ignored="false" />
+    <file path="/2014-03-16-install.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394988352174" ignored="false" />
+    <file path="/index.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394985526923" ignored="false" />
+    <file path="/install.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394986186566" ignored="false" />
+    <file path="/2014-03-16-commands.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394988689953" ignored="false" />
+    <file path="/2014-03-16-licence.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394989346432" ignored="false" />
+    <file path="/2014-03-16-dbreplace.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394989101066" ignored="false" />
+    <file path="/2014-03-16-maintenance.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394989664714" ignored="false" />
+    <file path="/2014-03-16-dbinnodb.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394989791553" ignored="false" />
+    <file path="/2014-03-16-dbdelete.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394989987020" ignored="false" />
+    <file path="/2014-03-16-ci.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990332500" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExcludedPharFiles">
+    <excludedPaths>
+      <path value="$PROJECT_DIR$/dist/downloads/appcli-previousversion.phar" />
+      <path value="$PROJECT_DIR$/dist/downloads/appcli.phar" />
+    </excludedPaths>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="appcli" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="2014-03-16-maintenance.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-maintenance.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="37" selection-start="449" selection-end="449" vertical-scroll-proportion="-14.72">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-03-16-dbtruncate.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbtruncate.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="3" selection-start="1090" selection-end="1090" vertical-scroll-proportion="-23.88">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-03-16-dbdelete.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbdelete.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="8" selection-start="924" selection-end="924" vertical-scroll-proportion="-11.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-03-16-ci.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-ci.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="66" selection-start="163" selection-end="163" vertical-scroll-proportion="0.30396476">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_site/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="105" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="45" selection-start="1148" selection-end="1148" vertical-scroll-proportion="-19.32">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ci.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_pages/ci.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-03-16-dbutf8.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbutf8.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="3" selection-start="379" selection-end="379" vertical-scroll-proportion="-20.2">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-03-16-install.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-install.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="8" selection-start="82" selection-end="82" vertical-scroll-proportion="-4.6">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-03-16-licence.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-licence.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="20" selection-start="88" selection-end="88" vertical-scroll-proportion="-7.08">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/index.md" />
+        <option value="$PROJECT_DIR$/_posts/install.md" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-install.md" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-commands.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-licence.md" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-maintenance.md" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-dboccurrences.md" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-dbinnodb.md" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-dbdelete.md" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-dbreplace.md" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-dbtruncate.md" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-dbutf8.md" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-ci.md" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1874" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Revu" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="options.lastSelected" value="editing.templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../www/sbm" />
+    <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="29d243f8-6b10-4bfc-88e1-870c046befd4">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="599aeb3b-74a3-4967-9b38-962948ce1562">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="fd0260a5-03a3-490d-ad69-c93f4df87ae4">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WORKS\github\appcli\_pages" />
+      <recent name="E:\WORKS\github\appcli" />
+      <recent name="E:\WORKS\github\appcli\tests\_data\fixtures\configuration\concrete" />
+      <recent name="E:\WORKS\github\appcli\tests\functional\commands" />
+      <recent name="E:\WORKS\github\appcli\src\Tequilarapido\Cli\Commands" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WORKS\github\appcli\tests\_data\fixtures\configuration\concrete" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f79b9344-ccbd-4170-ab62-001580bcf866" name="Default" comment="" />
+      <created>1393347417502</created>
+      <updated>1393347417502</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="reVu" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12890232" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.6706949" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20916115" sideWeight="0.8710977" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/_includes/navigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="82" selection-end="116" vertical-scroll-proportion="-0.92">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="497" selection-end="504" vertical-scroll-proportion="0.40130863">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/maintenance.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbinnodb.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="156" selection-end="211" vertical-scroll-proportion="-8.28">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dboccurrences.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1935" selection-end="1935" vertical-scroll-proportion="-34.96">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbreplace.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="17" selection-start="2168" selection-end="2168" vertical-scroll-proportion="-22.04">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbtruncate.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="3" selection-start="1090" selection-end="1090" vertical-scroll-proportion="-23.88">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbutf8.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="3" selection-start="379" selection-end="379" vertical-scroll-proportion="-20.2">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-install.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="8" selection-start="82" selection-end="82" vertical-scroll-proportion="-4.6">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-maintenance.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="37" selection-start="449" selection-end="449" vertical-scroll-proportion="-14.72">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbdelete.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="8" selection-start="924" selection-end="924" vertical-scroll-proportion="-11.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-licence.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="20" selection-start="88" selection-end="88" vertical-scroll-proportion="-7.08">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="105" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="45" selection-start="1148" selection-end="1148" vertical-scroll-proportion="-19.32">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/ci.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-ci.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="66" selection-start="163" selection-end="163" vertical-scroll-proportion="0.30396476">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+  </component>
+</project>
+
