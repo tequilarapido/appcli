@@ -1,0 +1,74 @@
+.brand {
+    background: url(../images/logo.png) no-repeat 12px 50%;
+    background-size: 22px;
+    padding-left: 40px !important;
+    color: #5A348A;
+}
+
+
+
+
+
+/* Headers ------------------------ */
+
+#content > h1{
+    font-size: 25px;
+    color: #5A348A;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#content > h2 {
+    font-size: 20px;
+    color: #E40090;
+    margin-top: 50px;
+}
+
+#content > h3 {
+    font-size: 15px;
+    color: #221F1F;
+    margin-top: 30px;
+}
+
+#content > h4 {
+    font-size: 12px;
+    color: #7E7E7E;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#content > .page-header:first-child h2  {
+    font-size: 20px;
+    color:#007ED3;
+}
+
+#content > .page-header:first-child h2:before  {
+    content: "\f054";
+    color:#007ED3;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    font-size: 17pt;
+    padding-right: 13px;
+}
+
+#content > h3:before {
+    content: "\f064";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    font-size: 13pt;
+    padding-right: 13px;
+}
+
+#content > h4:before {
+    content: "\f0da";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    font-size: 13pt;
+    padding-right: 13px;
+}

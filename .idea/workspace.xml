@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79b9344-ccbd-4170-ab62-001580bcf866" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-03-16-ci.md" afterPath="$PROJECT_DIR$/_posts/2014-03-16-ci.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-03-16-install.md" afterPath="$PROJECT_DIR$/_posts/2014-03-16-install.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\WORKS\github\appcli\css\main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
+      <change type="MOVED" beforePath="E:\WORKS\github\appcli\css\syntax.css" afterPath="$PROJECT_DIR$/assets/css/syntax.css" />
     </list>
     <ignored path="appcli.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394809943418" ignored="false" />
+    <file path="/Dummy.txt" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990488099" ignored="false" />
     <file path="/release.sh" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1393348483881" ignored="false" />
     <file path="/release-prepare.sh" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1393350382345" ignored="false" />
     <file path="/release-push.sh" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1393350852157" ignored="false" />
@@ -60,6 +65,20 @@
     <file path="/2014-03-16-dbinnodb.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394989791553" ignored="false" />
     <file path="/2014-03-16-dbdelete.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394989987020" ignored="false" />
     <file path="/2014-03-16-ci.md" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990332500" ignored="false" />
+    <file path="/page.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990511754" ignored="false" />
+    <file path="/default.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394991226285" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/dev/ci.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990892268" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/command/dbtruncate.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990892268" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/command/dbreplace.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990892268" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/dev/licence.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990892268" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/command/maintenance.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990892268" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/command/dbinnodb.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990892268" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/command/dbutf8.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990892268" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/command/dboccurrences.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990892268" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/command/dbdelete.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394990892268" ignored="false" />
+    <file path="/header-tr.html" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394991316554" ignored="false" />
+    <file path="/dummy.xml" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394991317026" ignored="false" />
+    <file path="/tr.css" changelist="f79b9344-ccbd-4170-ab62-001580bcf866" time="1394991713926" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,125 +102,151 @@
     <favorites_list name="appcli" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="2014-03-16-maintenance.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-maintenance.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="37" selection-start="449" selection-end="449" vertical-scroll-proportion="-14.72">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-03-16-dbtruncate.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbtruncate.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="3" selection-start="1090" selection-end="1090" vertical-scroll-proportion="-23.88">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-03-16-dbdelete.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbdelete.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="8" selection-start="924" selection-end="924" vertical-scroll-proportion="-11.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-03-16-ci.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-ci.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="66" selection-start="163" selection-end="163" vertical-scroll-proportion="0.30396476">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_site/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="105" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="45" selection-start="1148" selection-end="1148" vertical-scroll-proportion="-19.32">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ci.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_pages/ci.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-03-16-dbutf8.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbutf8.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="3" selection-start="379" selection-end="379" vertical-scroll-proportion="-20.2">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-03-16-install.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-install.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="8" selection-start="82" selection-end="82" vertical-scroll-proportion="-4.6">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-03-16-licence.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-licence.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="20" selection-start="88" selection-end="88" vertical-scroll-proportion="-7.08">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="default.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="11" column="8" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tr.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/tr.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="61" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="00-install.md" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/_pages/00-install.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+              <provider editor-type-id="MarkdownPreviewEditor">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="2014-03-16-install.md" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-install.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="3" selection-start="467" selection-end="467" vertical-scroll-proportion="-20.24">
+                  <folding />
+                </state>
+              </provider>
+              <provider editor-type-id="MarkdownPreviewEditor">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="header-tr.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_includes/header-tr.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="0" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="40" column="0" selection-start="531" selection-end="569" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="navigation.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_includes/navigation.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="2014-03-16-dbutf8.md" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbutf8.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="27" column="33" selection-start="393" selection-end="393" vertical-scroll-proportion="-22.08">
+                  <folding />
+                </state>
+              </provider>
+              <provider editor-type-id="MarkdownPreviewEditor">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_includes/header.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="85" selection-start="0" selection-end="146" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="2014-03-16-dbdelete.md" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbdelete.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="39" column="15" selection-start="1026" selection-end="1026" vertical-scroll-proportion="-16.56">
+                  <folding />
+                </state>
+              </provider>
+              <provider editor-type-id="MarkdownPreviewEditor">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="2014-03-16-licence.md" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-licence.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="20" selection-start="88" selection-end="88" vertical-scroll-proportion="-7.0">
+                  <folding />
+                </state>
+              </provider>
+              <provider editor-type-id="MarkdownPreviewEditor">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="2014-03-16-ci.md" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-ci.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="33" selection-start="84" selection-end="84" vertical-scroll-proportion="0.22282024">
+                  <folding />
+                </state>
+              </provider>
+              <provider editor-type-id="MarkdownPreviewEditor">
+                <state />
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -219,21 +264,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/index.md" />
-        <option value="$PROJECT_DIR$/_posts/install.md" />
-        <option value="$PROJECT_DIR$/_posts/2014-03-16-install.md" />
-        <option value="$PROJECT_DIR$/_posts/2014-03-16-commands.md" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2014-03-16-licence.md" />
         <option value="$PROJECT_DIR$/_posts/2014-03-16-maintenance.md" />
         <option value="$PROJECT_DIR$/_posts/2014-03-16-dboccurrences.md" />
         <option value="$PROJECT_DIR$/_posts/2014-03-16-dbinnodb.md" />
-        <option value="$PROJECT_DIR$/_posts/2014-03-16-dbdelete.md" />
         <option value="$PROJECT_DIR$/_posts/2014-03-16-dbreplace.md" />
         <option value="$PROJECT_DIR$/_posts/2014-03-16-dbtruncate.md" />
+        <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/_posts/2014-03-16-dbutf8.md" />
+        <option value="$PROJECT_DIR$/_includes/header-tr.html" />
+        <option value="$PROJECT_DIR$/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/_layouts/default.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-install.md" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-dbdelete.md" />
+        <option value="$PROJECT_DIR$/assets/css/tr.css" />
         <option value="$PROJECT_DIR$/_posts/2014-03-16-ci.md" />
       </list>
     </option>
@@ -313,7 +358,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_site" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -383,7 +450,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="editing.templates" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../www/sbm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tequilarapido.github.io" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -416,13 +483,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WORKS\github\appcli\assets\images" />
       <recent name="E:\WORKS\github\appcli\_pages" />
       <recent name="E:\WORKS\github\appcli" />
       <recent name="E:\WORKS\github\appcli\tests\_data\fixtures\configuration\concrete" />
       <recent name="E:\WORKS\github\appcli\tests\functional\commands" />
-      <recent name="E:\WORKS\github\appcli\src\Tequilarapido\Cli\Commands" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WORKS\github\appcli\assets" />
       <recent name="E:\WORKS\github\appcli\tests\_data\fixtures\configuration\concrete" />
     </key>
   </component>
@@ -553,130 +621,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="82" selection-end="116" vertical-scroll-proportion="-0.92">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="497" selection-end="504" vertical-scroll-proportion="0.40130863">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_pages/maintenance.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbinnodb.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="156" selection-end="211" vertical-scroll-proportion="-8.28">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dboccurrences.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1935" selection-end="1935" vertical-scroll-proportion="-34.96">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbreplace.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="17" selection-start="2168" selection-end="2168" vertical-scroll-proportion="-22.04">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbtruncate.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="3" selection-start="1090" selection-end="1090" vertical-scroll-proportion="-23.88">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbutf8.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="3" selection-start="379" selection-end="379" vertical-scroll-proportion="-20.2">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-install.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="8" selection-start="82" selection-end="82" vertical-scroll-proportion="-4.6">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-maintenance.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="449" selection-end="449" vertical-scroll-proportion="-14.72">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbdelete.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="8" selection-start="924" selection-end="924" vertical-scroll-proportion="-11.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-licence.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="88" selection-end="88" vertical-scroll-proportion="-7.08">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="105" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="45" selection-start="1148" selection-end="1148" vertical-scroll-proportion="-19.32">
+        <state line="21" column="45" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.5199139">
           <folding />
         </state>
       </provider>
@@ -694,9 +641,115 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbutf8.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="33" selection-start="393" selection-end="393" vertical-scroll-proportion="-22.08">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/navigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="85" selection-start="0" selection-end="146" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/header-tr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="8" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="531" selection-end="569" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-install.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="3" selection-start="467" selection-end="467" vertical-scroll-proportion="-20.24">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-dbdelete.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="15" selection-start="1026" selection-end="1026" vertical-scroll-proportion="-16.56">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-licence.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="20" selection-start="88" selection-end="88" vertical-scroll-proportion="-7.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/tr.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="61" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/00-install.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-ci.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="66" selection-start="163" selection-end="163" vertical-scroll-proportion="0.30396476">
+        <state line="9" column="33" selection-start="84" selection-end="84" vertical-scroll-proportion="0.22282024">
           <folding />
         </state>
       </provider>
