@@ -10,7 +10,7 @@ class DatabaseConvertToInnoDBCest
      */
     public function convert_all_database_tables_to_innodb(TestGuy $I)
     {
-        $I->wantTo('Convert all wp_v381 tables to innodb');
+        $I->wantTo('to run db:innodb to convert all wp_v381 tables to innodb');
         $I->run('db:innodb tests/_data/fixtures/configuration/wp-381.json');
 
         $I->dontSeeInShellOutput('Error');

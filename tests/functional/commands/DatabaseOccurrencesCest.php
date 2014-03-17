@@ -23,7 +23,7 @@ class DatabaseOccurrencesCest
      */
     public function run_command_with_search_based_on_config_configuration(TestGuy $I)
     {
-        $I->wantTo('Run db:occurrences command with no replace configuration');
+        $I->wantTo('Run db:occurrences with search based on config configuration');
         $I->run('db:occurrences --no-ansi  tests/_data/fixtures/configuration/wp-381-with-replace-operations.json');
 
         $I->dontSeeInShellOutput('Error');
@@ -39,7 +39,7 @@ class DatabaseOccurrencesCest
      */
     public function run_command_with_simple_search_from_command_argument(TestGuy $I)
     {
-        $I->wantTo('Run db:occurrences command with no replace configuration');
+        $I->wantTo('Run db:occurrences with simple search from command argument');
         $I->run('db:occurrences --no-ansi  tests/_data/fixtures/configuration/wp-381.json "admin@"');
 
         $I->dontSeeInShellOutput('Error');
@@ -54,7 +54,7 @@ class DatabaseOccurrencesCest
      */
     public function run_command_with_multiple_search_from_command_argument(TestGuy $I)
     {
-        $I->wantTo('Run db:occurrences command with no replace configuration');
+        $I->wantTo('Run db:occurrences with multiple search from command argument');
         $I->run('db:occurrences --no-ansi  tests/_data/fixtures/configuration/wp-381.json "admin@|mystery|newest"');
 
         $I->dontSeeInShellOutput('Error');
@@ -69,7 +69,7 @@ class DatabaseOccurrencesCest
      */
     public function run_command_with_search_from_command_argument_with_no_results(TestGuy $I)
     {
-        $I->wantTo('Run db:occurrences command with no replace configuration');
+        $I->wantTo('Run db:occurrences command with search from command argument but with no results');
         $I->run('db:occurrences --no-ansi  tests/_data/fixtures/configuration/wp-381.json "something-that-will-never-ever-exists-123467890"');
 
         $I->dontSeeInShellOutput('Error');
