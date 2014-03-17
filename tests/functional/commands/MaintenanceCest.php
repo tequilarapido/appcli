@@ -9,7 +9,7 @@ class MaintenanceCest
      */
     public function put_maintenance_off(TestGuy $I)
     {
-        $I->wantTo('Put maintenance to "off"');
+        $I->wantTo('run maintenance command to tput maintenance to "off"');
         $I->run('maintenance off --dont-check-directory');
 
         $I->dontSeeInShellOutput('Error');
@@ -24,7 +24,7 @@ class MaintenanceCest
      */
     public function put_maintenance_on(TestGuy $I)
     {
-        $I->wantTo('Put maintenance to "on"');
+        $I->wantTo('run maintenance command to put maintenance to "on"');
         $I->run('maintenance on --dont-check-directory');
 
         $I->dontSeeInShellOutput('Error');
@@ -40,7 +40,7 @@ class MaintenanceCest
     public function get_maintenance_status_when_it_is_off(TestGuy $I)
     {
         // Status : Off
-        $I->wantTo('Get the maintenance status when it is off');
+        $I->wantTo('run maintenance command to get the maintenance status when it is off');
         $I->run('maintenance off --dont-check-directory');
         $I->run('maintenance status --dont-check-directory');
         $I->dontSeeInShellOutput('Error');
@@ -55,7 +55,7 @@ class MaintenanceCest
     public function get_maintenance_status_when_it_is_on(TestGuy $I)
     {
         // Status : On
-        $I->wantTo('Get the maintenance status when it is on');
+        $I->wantTo('run maintenance command to get the maintenance status when it is on');
         $I->run('maintenance on --dont-check-directory');
         $I->run('maintenance status --dont-check-directory');
         $I->dontSeeInShellOutput('Error');

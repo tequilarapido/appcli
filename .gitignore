@@ -16,5 +16,6 @@ composer.lock
 
 # Doc
 _site
+_pages
 
 tests/_data/fixtures/configuration/concrete

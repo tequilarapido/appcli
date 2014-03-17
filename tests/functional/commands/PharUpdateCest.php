@@ -36,6 +36,8 @@ class PharUpdateCest
      */
     public function update_previous_phar_to_latest_release(TestGuy $I)
     {
+        $I->wantTo('run self-update command to update previous phar to lateset release');
+
         $this->createTestPhars();
 
         $previousVersion = $this->getPharVersion($this->getTestsPath() . $this->previousPhar);
@@ -67,6 +69,7 @@ class PharUpdateCest
      */
     public function try_update_latest_release(TestGuy $I)
     {
+        $I->wantTo('run self-update command to update aleady up to date phar');
         $this->createTestPhars();
 
         $currentPharPath = $this->getTestsPath() . $this->currentPhar;

@@ -10,7 +10,7 @@ class InfosCest
      */
     public function get_infos_for_acme_project(TestGuy $I)
     {
-        $I->wantTo('to get information about acme project configuration');
+        $I->wantTo('run infos command to get information about acme project configuration');
         $I->run('infos tests/_data/fixtures/configuration/acme.json');
 
         $I->dontSeeInShellOutput('Error');
