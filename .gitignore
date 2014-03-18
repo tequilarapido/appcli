@@ -1,2 +1,7 @@
+.idea
 _site
 _pages
+composer*
+codecept*
+tests
+src
