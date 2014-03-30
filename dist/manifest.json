@@ -28,5 +28,11 @@
     "sha1":"85ddf4c5d4e0a0be4993f5a1e4b5835c10d58462",
     "url":"https://github.com/tequilarapido/appcli/raw/master/dist/downloads/appcli.phar",
     "version":"1.1.0"
+  },
+  {
+    "name":"appcli.phar",
+    "sha1":"a6160c12565893a996f2720c364b9a114af4e113",
+    "url":"https://github.com/tequilarapido/appcli/raw/master/dist/downloads/appcli.phar",
+    "version":"1.1.1"
   }
 ]
