@@ -7,11 +7,11 @@ use Tequilarapido\Cli\Commands\Base\AbstractDatabaseConvertToEngine;
 use Tequilarapido\Database\Database;
 use Tequilarapido\Database\Table;
 
-class DatabaseConvertToInnodb extends AbstractDatabaseConvertToEngine
+class DatabaseConvertToMyIsam extends AbstractDatabaseConvertToEngine
 {
     public function __construct($name = null)
     {
-        $this->engine = 'InnoDB';
+        $this->engine = 'MyISAM';
         parent::__construct($name);
     }
 }

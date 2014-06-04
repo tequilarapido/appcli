@@ -29,6 +29,7 @@ $application->addCommands(array(
     new Commands\Infos,
     new Commands\Maintenance,
     new Commands\DatabaseConvertToInnodb,
+    new Commands\DatabaseConvertToMyIsam,
     new Commands\DatabaseConvertToUtf8,
     new Commands\DatabaseTruncateCleanup,
     new Commands\DatabaseDeleteCleanup,

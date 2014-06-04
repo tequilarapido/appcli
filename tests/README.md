@@ -20,4 +20,10 @@
          sendmail_path = "/usr/bin/env /var/lib/gems/1.8/bin/catchmail"
 
 
+* Run one test
+
+        php codecept.phar run tests/functional/commands/DatabaseConvertToMyISAMCest.php
+
+* Run all tests
+        php codecept.phar run functional --steps --env console
 
