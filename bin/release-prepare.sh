@@ -1,7 +1,7 @@
 #!/bin/bash
 # - bin/release-prepare.sh
 #       this script must be run from project root directory !
-#
+# - You need to install box (curl -LSs https://box-project.github.io/box2/installer.php | php)
 
 BASEDIR=$(dirname $0)
 DIR_SCRIPT=$(dirname ${BASH_SOURCE[0]})
