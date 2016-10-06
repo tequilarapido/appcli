@@ -16,10 +16,9 @@
         "symfony/filesystem": "2.4.2",
         "illuminate/database": "4.1.24",
         "dandoescode/datum": "1.0.0",
-        "herrera-io/json": "1.0.3",
         "swiftmailer/swiftmailer": "5.1.0",
         "tequilarapido/php-serialized": "1.0.2",
-        "kherge/amend": "3.0.3",
+        "kherge/amend": "3.0.4",
         "hazbo/json-formatter": "dev-master"
     },
     "require-dev": {

@@ -4,8 +4,7 @@
 #
 set -e
 BASEDIR=$(dirname $0)
-SCRIPT=$(readlink -f $0)
-DIR_SCRIPT=`dirname $SCRIPT`
+DIR_SCRIPT=$(dirname ${BASH_SOURCE[0]})
 
 # Version
 TAG=`cat .version`

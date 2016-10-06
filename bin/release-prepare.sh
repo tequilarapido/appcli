@@ -3,11 +3,12 @@
 #       this script must be run from project root directory !
 #
 
-set -e
 BASEDIR=$(dirname $0)
-SCRIPT=$(readlink -f $0)
-DIR_SCRIPT=`dirname $SCRIPT`
+DIR_SCRIPT=$(dirname ${BASH_SOURCE[0]})
 DIR_PHAR=`realpath "$DIR_SCRIPT/../dist/downloads"`
+
+
+
 
 # Version increment, TAG?
 version_increment='patch'
@@ -15,11 +16,11 @@ if [[ ! -z "$1" ]]; then
 	if [ "$1" == "patch" ] || [ "$1" == "minor" ] || [ "$1" == "major" ]; then
 		version_increment="$1"
 	else
-		pms_error "Version increment, if specified should match patch|minor|major."
+		echo  "ERROR - Version increment, if specified should match patch|minor|major."
 		exit
 	fi
 fi
-echo -e "Getting next version ..."
+echo  "Getting next version ..."
 semver inc "$version_increment"
 TAG=`semver tag|sed "s/v//"`
 
@@ -27,11 +28,12 @@ TAG=`semver tag|sed "s/v//"`
 pharfile="$DIR_PHAR/appcli.phar"
 previousPharFile="$DIR_PHAR/appcli-previousversion.phar"
 if [ -f "$pharfile" ]; then
+    echo  "Copying phar ..."
     cp -fr "$pharfile" "$previousPharFile"
 fi
 
 # Tagging version in git, so box will pickup the right version
-echo -e "Tagging version $TAG"
+echo  "Tagging version $TAG"
 git tag ${TAG}
 
 # Build phar
