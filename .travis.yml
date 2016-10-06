@@ -30,7 +30,7 @@ before_script:
   # Dependencies
   - composer self-update && composer --version
   - composer install --prefer-source --no-interaction --dev
-  - wget http://codeception.com/codecept.phar
+  - wget http://codeception.com/releases/1.8.2/codecept.phar
 
 script:
   - php codecept.phar run functional --steps --env $LAUNCHER
