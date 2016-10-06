@@ -10,7 +10,7 @@ DIR_SCRIPT=$(dirname ${BASH_SOURCE[0]})
 TAG=`cat .version`
 
 # Commit
-echo -e "Commit files"
+echo "Commit files"
 git add .
 git commit -m "$TAG Release."
 
